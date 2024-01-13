@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "620443700884",
+    "firebase_url": "https://av-messenger-4d6f1-default-rtdb.firebaseio.com",
+    "project_id": "av-messenger-4d6f1",
+    "storage_bucket": "av-messenger-4d6f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620443700884:android:b02fc69daea13a94a5ee81",
+        "android_client_info": {
+          "package_name": "com.av.avmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-mHlXNBJvvGYlX2QJgZzfqr6089hoDfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
