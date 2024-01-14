@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -66,6 +67,7 @@ public class chatwindo extends AppCompatActivity {
         messageAdpter = findViewById(R.id.msgadpter);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
+
         messageAdpter.setLayoutManager(linearLayoutManager);
         mmessagesAdpter = new messagesAdpter(chatwindo.this,messagesArrayList);
         messageAdpter.setAdapter(mmessagesAdpter);
@@ -94,6 +96,8 @@ public class chatwindo extends AppCompatActivity {
                     messagesArrayList.add(messages);
                 }
                 mmessagesAdpter.notifyDataSetChanged();
+                linearLayoutManager.scrollToPosition(messagesArrayList.size()-1);
+
             }
 
             @Override
